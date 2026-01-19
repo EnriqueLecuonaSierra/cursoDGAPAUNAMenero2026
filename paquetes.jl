@@ -1,5 +1,5 @@
 #=
-    Instalar algunos paquetes necesarios para el curso sobre Estadística Bayesiana.
+    Instalar algunos paquetes necesarios para el curso
 =#
 
 using Pkg # cargando el instalador de paquetes de Julia
