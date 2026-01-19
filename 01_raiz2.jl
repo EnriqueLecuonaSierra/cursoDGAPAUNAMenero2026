@@ -1,6 +1,6 @@
 ### Generar dígitos de la raíz cuadrada de 2
 ### Autor: Arturo Erdely
-### Fecha: 2026-01-11
+### Fecha: 2026-01-19
 
 
 ## Algunos tipos de números y su representación binaria
@@ -17,7 +17,7 @@ maxInt64 = typemax(Int64) # el entero mayor a 64 bits
 minInt64 = typemin(Int64) # el entero menor a 64 bits
 
 println(bitstring(13)) # representación binaria del entero 13 a 64 bits
-length(bitstring(5)) # comprobando cantidad de bits
+length(bitstring(13)) # comprobando cantidad de bits
 1*2^0 + 0*2^1 + 1*2^2 + 1*2^3 # comprobando
 sum([1, 0, 1, 1] .* (2 .^ [0, 1, 2, 3])) # comprobando
 
@@ -138,7 +138,7 @@ sumaFórmula(100)
 
 a = 4 / 2 # división de punto flotante
 typeof(a)
-b = 4 ÷ 2 # división entera
+b = 4 ÷ 2 # división entera:  \div + [tab]  
 typeof(b)
 5 ÷ 3 # división entera
 5 % 3 # residuo de la división entera 
@@ -148,7 +148,7 @@ divrem(5, 3) # ambos como una tupla
 function sumaEntera(n::Int)
     # calcular 1 + 2 + ⋯ + n
     s = 0
-    for i ∈ 1:n 
+    for i ∈ 1:n # \in + [tab]   también se vale: for i in 1:n
         s += i # es lo mismo que: s = s + i
     end
     return s
@@ -245,7 +245,7 @@ println(r[2])
 join(r[1])
 "1." * join(r[1])
 
-a = √2 # es lo mismo que sqrt(2), el símbolo se genera: \sqrt + tab 
+a = √2 # es lo mismo que sqrt(2), el símbolo se genera: \sqrt + [tab] 
 typeof(a) # número de únto flotante a 64 bits
 
 
